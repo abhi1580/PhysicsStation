@@ -1,0 +1,38 @@
+.contact-banner {
+    background-image: url('../assets/contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+.conatct-heading {
+    font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.contact-para {
+    color: #ffffff;
+  margin-top: 12px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.btn-submit {
+    background-color: #07217f;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn-submit:hover {
+    background-color: #797878;
+    color: #ffffff;
+}

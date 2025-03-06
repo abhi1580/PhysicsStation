@@ -1,0 +1,54 @@
+.about-banner {
+  background-image: url('../assets/about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+}
+
+.about-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  
+}
+.about-para {
+    color: #09122C;
+  margin-top: 12px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.m-heading {
+    font-weight: bold;
+    color: #07217f;
+    opacity: 85%;
+}
+.m-para {
+    color: #09122C;
+    margin-top: 12px;
+    opacity: 0.8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.list-para {
+    margin-top: 12px;
+    opacity: 0.9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.list-intro {
+    opacity: 85%;
+}
+.prof-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #100330;
+    opacity: 85%;
+}

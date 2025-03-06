@@ -1,0 +1,106 @@
+.login-container {
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.signup-heading {
+    font-weight: bold;
+    color: #07217f;
+    font-size: 2.5rem;
+    opacity: 90%;
+}
+
+.registration-form form {
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+}
+
+.registration-form .item {
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .social-media {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    opacity: 0.8;
+    margin-bottom: 10%;
+}
+
+.registration-form .social-icons {
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.registration-form .social-icons a {
+    font-size: 23px;
+    margin: 0 3px;
+    color: #3d3d39;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 45px;
+}
+
+.registration-form .social-icons a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.create-account {
+    background-color: #07217f;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 95%;
+}
+
+.create-account:hover {
+    background-color: #797878;
+    color: #ffffff;
+}
+
+.rem {
+    color: #000000;
+    font-size: 1rem;
+    opacity: 80%;
+}
+
+.loginlink {
+    color: #000000;
+    font-size: 1rem;
+    opacity: 80%;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .registration-form form {
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
