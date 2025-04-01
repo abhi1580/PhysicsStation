@@ -7,7 +7,7 @@ import Services from './components/Services';
 import Resources from './components/Resources';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
+import AdmissionForm from './components/AdmissionForm';
 import './App.css'; 
 import AuthLayout from './components/AuthLayout';
 import SignUp from './components/SignUp';
@@ -27,6 +27,7 @@ function App() {
               <Route path='/resources' element={<Resources />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/admission" element={<AdmissionForm />} />
               <Route path="/auth" element={<AuthLayout />} >
                 <Route path="signup" element={<SignUp />} />
                 <Route path="login" element={<Login />} />

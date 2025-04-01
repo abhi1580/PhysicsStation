@@ -43,6 +43,9 @@ const Header = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">Contact Us</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/admission">Admission</Link>
+              </li>
             </ul>
           </div>
           <div className="d-flex">

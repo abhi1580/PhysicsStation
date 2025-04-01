@@ -96,9 +96,9 @@ const Home = () => {
           <p className="mainheading2">
             Your one-stop destination for all things physics.
           </p>
-          <button className="btn btn-secondary mt-2 registerbtn">
+          <Link to="/admission" className="btn btn-secondary mt-2 registerbtn">
             Register Now
-          </button>
+          </Link>
         </div>
 
         <div className="container mt-5">
