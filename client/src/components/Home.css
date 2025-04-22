@@ -1,69 +1,336 @@
-.banner{
-    background-image: url('../assets/10136775_17973908.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 70vh;
+
+.hero-section {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 80px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 70vh;
 }
-.mainheading{
-    font-size: 50px;
-    font-weight: bold;
-    color: #000000;
-    text-align: center;
-    margin-top: 20vh;
-    opacity: 0.8;
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #393b3d;
+  margin-bottom: 20px;
 }
-.mainheading2{
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000;
-    text-align: center;
-    margin-top: 10px;
-    opacity: 0.8;
+.highlight-text {
+  color: #fec107; 
+  font-weight: 800;
 }
-.registerbtn{
-    background-color: #07217f;
-    border-radius: 30px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-top: 20px;
-    margin-left: 10px;
-    opacity: 0.9;
+
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #393b3d;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
 }
-.serviceheading{
-    font-weight: bold;
-    color: #07217f;
-    text-align: center;
-    opacity: 85%;
+
+.hero-btn {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #fec107;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
 }
-.servicepara{
-    color: #09122C;
-    text-align: center;
-    margin-top: 12px;
-    opacity: 0.8;
-    font-family: 'Segoe UI',Arial,sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
+
+.hero-btn:hover {
+  background-color: #ca9b0d;
+  text-decoration: none;
+  color: white;
 }
-.cardtext{
-    color: #000000;
-    text-align: center;
-    opacity: 0.8;
-    font-family: 'Segoe UI',Arial,sans-serif;
-    font-weight: 450;
+
+/* service section */
+
+.serviceheading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #393b3d;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #fec107;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  text-align: center;
 }
-.download-link{
-    color: #07217f;
-    font-weight: bold;
-    text-decoration: none;
+.servicepara {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
 }
-.study-resources{
-    background-color: #F8FAFC;
-    padding: 35px 40px;
+.service-icon {
+  font-size: 2rem;
 }
-.preparation-section{
-    background-color: #F8FAFC;
-    padding: 40px 45px;
+
+.card-bg-0 {
+  background-color: #007bff; 
+  color: rgb(255, 255, 255);
+}
+
+.card-bg-1 {
+  background-color: #ffffff; 
+  color: #393b3d;
+}
+
+.card-bg-2 {
+  background-color: #ffc107; 
+  color: rgb(255, 255, 255);
+}
+
+.card-bg-3 {
+  background-color: #ffffff; 
+  color: #393b3d;
+}
+
+.card-bg-4 {
+  background-color: #188754; 
+  color: white;
+}
+
+.card-bg-5 {
+  background-color: #ffffff; 
+  color: #393b3d;
+}
+.custom-learnmore-btn {
+  background-color: #393b3d;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 6px 16px;
+  letter-spacing: 1px;
+}
+
+.custom-learnmore-btn:hover {
+  background-color: #4c4d4e;
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+/* prepration */
+.preparation-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.prepheading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #393b3d;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #fec107;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  text-align: center;
+}
+
+.preppara {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+}
+
+.card {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-icon {
+  font-size: 2rem;
+  color: #fec107;
+}
+
+.card-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.card-text1 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.prep-btn {
+  background-color: #fec107;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+/* Junior classes section */
+
+
+.elegant-services {
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+.elegant-services h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #393b3d;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #fec107;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  text-align: center;
+}
+
+.elegant-services p {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.service-image {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.03);
+}
+
+.service-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cardtext1 {
+  font-size: 1.05rem;
+  color: #333;
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.6;
+}
+
+.cardtext1::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* info */
+.class-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  background-color: #fec107;
+  border-radius: 12px;
+  
+}
+
+.info-box {
+  background-color: #fec107;
+  padding: 20px 30px;
+  width: 180px;
+  text-align: center;
+}
+.info-title {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.info-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Gallary */
+.gallery-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #393b3d;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #fec107;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  text-align: center;
+}
+
+.gallery-subheading {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.image-gallery .col-lg-4 {
+  padding: 0 12px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .image-gallery .col-lg-4 {
+    width: 33.3333%;
+  }
+}
+
+.gallery-img {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Student Reviews */
+
+.review-head{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #393b3d;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #fec107;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  text-align: center;
 }

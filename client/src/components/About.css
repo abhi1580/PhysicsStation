@@ -1,54 +1,91 @@
-.about-banner {
-  background-image: url('../assets/about.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 70vh;
+.about-section {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 40vh;
 }
 
-.about-heading {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  
-}
-.about-para {
-    color: #09122C;
-  margin-top: 12px;
-  font-family: 'Segoe UI', Arial, sans-serif;
+.about-main-head{
+  font-size: 2.5rem;
   font-weight: 600;
+  color: #393b3d;
   margin-bottom: 20px;
-  text-align: left;
-  margin-left: 20%;
-  margin-right: 20%;
+  text-align: center;
+  margin-top: 30px;
 }
+
+.highlite-main-head{
+  color: #fec107;
+}
+.about-main-para{
+  font-size: 1.25rem;
+    color: #393b3d;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
 .m-heading {
-    font-weight: bold;
-    color: #07217f;
-    opacity: 85%;
-}
-.m-para {
-    color: #09122C;
-    margin-top: 12px;
-    opacity: 0.8;
-    font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #393b3d;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: #fec107;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
     font-weight: 600;
-    margin-bottom: 20px;
 }
+
+.list-style {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.list-style li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+
+.m-para, .list-intro {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
 .list-para {
-    margin-top: 12px;
-    opacity: 0.9;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
+  font-weight: 600;
+  color: #343a40;
+  margin-top: 15px;
 }
-.list-intro {
-    opacity: 85%;
+
+
+.prof-name, .team-member {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
 }
-.prof-name {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #100330;
-    opacity: 85%;
+
+.team-role {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .p-5 {
+    padding: 1.5rem !important;
+  }
+
+  .about-main-head {
+    font-size: 2.2rem;
+  }
+
+  .m-heading {
+    font-size: 1.3rem;
+  }
+
+  .gallery-item img {
+    height: 150px;
+  }
 }

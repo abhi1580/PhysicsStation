@@ -6,7 +6,7 @@ import {} from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div className="w-100">
-      <footer className="text-white text-center text-lg-start" style={{ backgroundColor: "#063970" }}>
+      <footer className="text-white text-center text-lg-start" style={{ backgroundColor: "#fec107" }}>
         <div className="container p-4">
           <div className="row mt-4">
             <div className="col-lg-4 col-md-12 mb-4 mb-md-0">

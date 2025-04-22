@@ -1,38 +1,116 @@
 .contact-banner {
-    background-image: url('../assets/contact.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 70vh;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 40vh;
 }
-.conatct-heading {
-    font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #ffffff;
-}
-.contact-para {
-    color: #ffffff;
-  margin-top: 12px;
-  font-family: 'Segoe UI', Arial, sans-serif;
+.contact-main-heading {
+  font-size: 2.5rem;
   font-weight: 600;
+  color: #393b3d;
   margin-bottom: 20px;
-  text-align: left;
-  margin-left: 20%;
-  margin-right: 20%;
+  text-align: center;
+  margin-top: 30px;
 }
-.btn-submit {
-    background-color: #07217f;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
+.highlight-2 {
+  color: #fec107;
 }
-.btn-submit:hover {
-    background-color: #797878;
-    color: #ffffff;
+.contact-main-para {
+  font-size: 1.25rem;
+  color: #393b3d;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* General Typography */
+.m-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.m-para {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+/* Contact Form Styling */
+form .form-group label {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #fec107;
+  box-shadow: none;
+}
+
+.btn-submit1 {
+  background-color: #fec107;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit1:hover {
+  background-color: #fec107;
+  color: #fff;
+}
+
+/* Contact Info Section */
+.contact-info h4 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info h4 svg {
+  margin-right: 8px;
+  color: #fec107;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Map Styling */
+.map-container {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: #fec107;
+  color: #fff;
+}
+
+.accordion-button {
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  color: #555;
+  background-color: #f9f9f9;
 }

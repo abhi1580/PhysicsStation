@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../components/AdmissionForm.css"; // Import your CSS file here
 
 const AdmissionForm = () => {
   const [formData, setFormData] = useState({
@@ -64,8 +65,9 @@ const AdmissionForm = () => {
   };
 
   return (
-    <div className="container mt-5 mb-5">
-      <h2 className="mb-4">Student Admission Form</h2>
+    <div className="container mt-5 mb-5 admission-form-section">
+  <div className="form-card shadow-lg p-4 rounded-4 bg-white">
+   <h2 className="mb-4">Student Admission Form</h2>
       <form onSubmit={handleSubmit} className="row g-3">
         <div className="col-md-6">
           <label className="form-label">Date of Admission</label>
@@ -195,6 +197,7 @@ const AdmissionForm = () => {
           <button type="submit" className="btn btn-primary">Submit</button>
         </div>
       </form>
+    </div>
     </div>
   );
 };

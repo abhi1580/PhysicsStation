@@ -39,8 +39,8 @@ const Contact = () => {
       
       <div className="row">
         <div className="col-12 text-center mb-4 contact-banner">
-          <h2 className="mt-5 conatct-heading">Contact Us</h2>
-          <p className="contact-para">We’d love to hear from you! Whether you have a question, need assistance, or just want to say hello, our team is here to help. Feel free to reach out to us via phone, email, or the contact form below. We strive to respond as quickly as possible and look forward to connecting with you! </p>
+          <h2 className=" contact-main-heading">Contact <span className="highlight-2">Us</span></h2>
+          <p className="contact-main-para">Feel free to reach out to us via phone, email, or the contact form below. We strive to respond as quickly as possible and look forward to connecting with you! </p>
         </div>
         
 
@@ -80,7 +80,7 @@ const Contact = () => {
                 onChange={handleChange}
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-submit mt-2 ">Submit</button>
+            <button type="submit" className="btn btn-submit1 mt-2 ">Submit</button>
           </form>
         </div>
 

@@ -15,9 +15,10 @@ import {
 
 import "./Home.css";
 import { Link } from "react-router-dom";
+import students from "../assets/students.jpg";
+import { Card, Col, Row } from "react-bootstrap";
 
 const Home = () => {
-
   const services = [
     {
       icon: faChalkboardTeacher,
@@ -52,8 +53,7 @@ const Home = () => {
     {
       icon: faCalendarDays,
       title: "Online Attendance",
-      description:
-        "Track your attendance online with our easy-to-use system.",
+      description: "Track your attendance online with our easy-to-use system.",
     },
   ];
 
@@ -88,274 +88,251 @@ const Home = () => {
     { id: 3, number: "03", name: "Science", link: "#" },
   ];
 
+  const infoData = [
+    { title: "Students", value: 50 },
+    { title: "Teachers", value: 5 },
+    { title: "Batches", value: 8 },
+    { title: "Subjects", value: 15 },
+  ];
+
+  const reviews = [
+    {
+      id: 1,
+      name: "John Doe",
+      text: "This is the best coaching class I have attended! The teaching quality is amazing.",
+      rating: 5,
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      text: "The resources and study materials provided are top-notch. Highly recommend!",
+      rating: 3,
+    },
+    {
+      id: 3,
+      name: "Sara Lee",
+      text: "A wonderful experience, the support from teachers is excellent, and I improved a lot.",
+      rating: 4,
+    },
+  ];
+
   return (
     <div className="container-fluid text-center">
       <div className="row">
-        <div className="col-12 banner">
-          <h1 className="mt-5 mainheading">Welcome to Physics Station</h1>
-          <p className="mainheading2">
-            Your one-stop destination for all things physics.
+        <div className="hero-section text-center">
+          <h1 className="hero-title mt-5">
+            Welcome to <span className="highlight-text">Physics Station</span>
+          </h1>
+          <p className="hero-subtitle">
+            Join our expert-led coaching program and level up your understanding
+            of physics.
           </p>
-          <Link to="/admission" className="btn btn-secondary mt-2 registerbtn">
+          <Link to="/admission" className="btn btn-secondary mt-3 hero-btn">
             Register Now
           </Link>
         </div>
 
         <div className="container mt-5">
-      <h2 className="serviceheading mt-5">Our Services</h2>
-      <p className="servicepara">
-        We offer specialized physics tuition for 11th and 12th standard students to help them excel in their studies.
-      </p>
-      <div className="row">
-        {services.map((service, index) => (
-          <div key={index} className="col-md-4 mb-4 mt-5">
-            <div className="card text-center">
-              <div className="card-body">
-                <FontAwesomeIcon icon={service.icon}  className="mb-3" />
-                <h5 className="card-title">{service.title}</h5>
-                <p className="card-text cardtext">{service.description}</p>
-              </div>
-              <div className="text-center mt-1 p-3">
-                <Link to="/services" className="btn btn-primary">Learn More </Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    
-
-    <div className="container mt-5 preparation-section">
-      <h2 className="serviceheading">Preparation</h2>
-      <p className="servicepara">
-        We also offer preparation courses for various competitive exams
-      </p>
-      <div className="row">
-        {preparationCourses.map((course, index) => (
-          <div key={index} className="col-md-4 mb-4 mt-5">
-            <div className="card text-center">
-              <div className="card-body">
-                <FontAwesomeIcon icon={course.icon}  className="mb-3" />
-                <h5 className="card-title">{course.title}</h5>
-                <p className="card-text cardtext">{course.description}</p>
-              </div>
-              <div className="text-center mt-1 p-3">
-              <Link to="/services" className="btn btn-primary">Learn More</Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-        <div className="container mt-5 mb-5 pt-5">
+          <h2 className="serviceheading mt-5">Services</h2>
+          <p className="servicepara mb-4">
+            At Physics Station, we offer a range of services to enhance your
+            learning experience.
+          </p>
           <div className="row">
-          <div className="col-md-6">
-          <h2 className="serviceheading">Other Services</h2>
-          <p className="servicepara">
-            We also provide additional services to support your learning journey.
+            {services.map((service, index) => (
+              <div key={index} className="col-md-4 p-0 m-0">
+                <div className={`card text-center h-100 card-bg-${index % 6}`}>
+                  <div className="card-body">
+                    <FontAwesomeIcon
+                      icon={service.icon}
+                      className="mb-3 service-icon"
+                    />
+                    <h5 className="card-title">{service.title}</h5>
+                    <p className="card-text">{service.description}</p>
+                  </div>
+                  <div className="text-center mt-1 p-3">
+                    <Link
+                      to="/services"
+                      className="btn custom-learnmore-btn btn-sm"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="container mt-5 preparation-section">
+          <h2 className="prepheading text-center">Preparation</h2>
+          <p className="preppara mb-4 text-center">
+            At Physics Station, we offer specialized preparation courses to help
+            you excel in your exams. Our expert instructors provide personalized
+            guidance and resources tailored to your needs.
           </p>
-          <ul className="list-unstyled">
-            <li className="mb-2 cardtext">
-               One-on-one mentoring sessions to address individual learning needs.
-            </li>
-            <li className="mb-2 cardtext">
-              Access to an extensive library of reference books and journals.
-            </li>
-            <li className="mb-2 cardtext">
-               Career counseling and guidance to help you choose the right path.
-            </li>
-            <li className="mb-2 cardtext">
-               Hands-on lab sessions to enhance practical understanding.
-            </li>
-            <li className="mb-2 cardtext">
-               Regular feedback and performance analysis to track progress.
-            </li>
-          </ul>
-        </div>
-        <div className="col-md-6 ">
-          <h2 className="serviceheading">Junior Classes</h2>
-          <p className="servicepara">
-            We offer specialized physics classes for 7th, 8th, 9th, and 10th standard students to build a strong foundation.
-          </p>
-          <ul className="list-unstyled">
-            <li className="mb-2 cardtext">
-              Interactive classes to make learning physics fun and engaging.
-            </li>
-            <li className="mb-2 cardtext">
-              Regular quizzes and assignments to reinforce concepts.
-            </li>
-            <li className="mb-2 cardtext">
-              Access to curated study materials and resources.
-            </li>
-            <li className="mb-2 cardtext">
-              Doubt-clearing sessions to ensure thorough understanding.
-            </li>
-            <li className="mb-2 cardtext">
-              Continuous assessment to monitor progress and provide feedback.
-            </li>
-          </ul>
-        </div>
-        </div>
+          <div className="row">
+            {preparationCourses.map((course, index) => (
+              <div key={index} className="col-md-4 mb-4 mt-3">
+                <div className="card h-100 shadow-sm border-0">
+                  <div className="card-body text-center">
+                    <FontAwesomeIcon
+                      icon={course.icon}
+                      className="mb-3 course-icon"
+                    />
+                    <h5 className="card-title fw-semibold">{course.title}</h5>
+                    <p className="card-text1">{course.description}</p>
+                  </div>
+                  <div className="text-center mb-3">
+                    <Link
+                      to="/services"
+                      className="btn btn-outline-warning btn-sm prep-btn"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        
-      <div className="container mt-5 study-resources">
-        <div className="row">
-          <div className="col-md-12">
-            <h1 className="text-center res-head-style serviceheading">Study Resources</h1>
+        <div className="class-info-container">
+          {infoData.map((item, index) => (
+            <div className="info-box" key={index}>
+              <div className="info-title">{item.title}</div>
+              <div className="info-value">{item.value}+</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="container mt-5 mb-5 pt-4 elegant-services">
+          <div className="row">
+            <h2 className=" mb-3">Junior Classes</h2>
+            <p className="">
+              We offer specialized physics classes for 7th, 8th, 9th, and 10th
+              standard students to build a strong foundation.
+            </p>
+            <div className="col-md-6 mb-4 image-container">
+              <img
+                src={students}
+                alt="Physics Classes"
+                className="service-image"
+              />
+            </div>
+            <div className="col-md-6 mb-4">
+              <div className="service-box p-4">
+                <ul className="list-unstyled text-start mt-3">
+                  <li className="mb-2 cardtext1">
+                    Access to curated study materials and resources.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Doubt-clearing sessions to ensure thorough understanding.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Continuous assessment to monitor progress and provide
+                    feedback.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Personalized attention to cater to individual learning
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Flexible timings to accommodate students' schedules.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Interactive learning environment with experienced faculty.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Regular parent-teacher meetings to discuss student progress.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Mock tests to prepare for competitive exams.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Group discussions and peer learning opportunities.
+                  </li>
+                  <li className="mb-2 cardtext1">
+                    Access to online resources and recorded lectures for
+                    revision.
+                  </li> 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row image-gallery">
+          <h2 className="gallery-heading mb-4">Gallery</h2>
+          <p className="gallery-subheading mb-4">
+            Explore our vibrant gallery showcasing the essence of Physics
+            Station.{" "}
+          </p>
+          <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              className="gallery-img"
+              alt="Boat on Calm Water"
+            />
+
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+              className="gallery-img"
+              alt="Wintry Mountain Landscape"
+            />
           </div>
 
-          <div className="col-md-6 mt-3">
-            <select
-              id="standard"
-              className="form-select btn btn-lg"
-              value={standard}
-              onChange={(e) => setStandard(e.target.value)}
-            >
-              <option value="">Select Standard</option>
-              {[...Array(5)].map((_, i) => (
-                <option key={i} value={`Standard ${i + 6}`}>{`Standard ${i + 6}`}</option>
+          <div className="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+              className="gallery-img"
+              alt="Mountains in the Clouds"
+            />
+
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              className="gallery-img"
+              alt="Boat on Calm Water"
+            />
+          </div>
+
+          <div className="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+              className="gallery-img"
+              alt="Waves at Sea"
+            />
+
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+              className="gallery-img"
+              alt="Yosemite National Park"
+            />
+          </div>
+        </div>
+
+        <div className="container py-5">
+          <h2 className="text-center mb-4 review-head">What Our Students Say</h2>
+          <div className="d-flex justify-content-between">
+            <button className="btn btn-warning">Prev</button>
+            <Row>
+              {reviews.map((review) => (
+                <Col sm={12} md={6} lg={4} key={review.id} className="mb-4">
+                  <div className="p-4">
+                    <h5>{review.name}</h5>
+                    <p>{review.text}</p>
+                    <div className="d-flex justify-content-start">
+                      {Array.from({ length: review.rating }).map((_, index) => (
+                        <span key={index} className="text-warning">
+                          &#9733;
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </Col>
               ))}
-            </select>
-          </div>
-
-          <div className="col-md-6 mt-3">
-            <select
-              id="subject"
-              className="form-select btn btn-lg"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-            >
-              <option value="">Select Subject</option>
-              {["Mathematics", "Science", "History", "Geography", "English"].map(
-                (subj, index) => (
-                  <option key={index} value={subj}>
-                    {subj}
-                  </option>
-                )
-              )}
-            </select>
-          </div>
-
-          <div className="col-md-12 mt-3 mb-3">
-            <table className="table table-striped">
-              <thead>
-                <tr>
-                  <th>Chapter No.</th>
-                  <th>Chapter Name</th>
-                  <th>Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                {chapters.map((chapter) => (
-                  <tr key={chapter.id}>
-                    <td>{chapter.number}</td>
-                    <td>{chapter.name}</td>
-                    <td>
-                      <a href={chapter.link} className="download-link">Download PDF</a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            </Row>
+            <button className="btn btn-warning">Next</button>
           </div>
         </div>
-      </div>
-
-
-      <div className="container mt-5 student-reviews">
-      <h2 className="serviceheading">Student Reviews</h2>
-      <p className="servicepara">
-        Hear what our students have to say about their experience at Physics Station.
-      </p>
-      <div className="row">
-        <div className="col-md-4 mb-4">
-          <blockquote className="blockquote">
-            <p className="mb-0">
-              "Physics Station has completely changed the way I understand physics. The tutors are amazing!"
-            </p>
-            <footer className="blockquote-footer mt-2">- Ananya Sharma</footer>
-          </blockquote>
-        </div>
-        <div className="col-md-4 mb-4">
-          <blockquote className="blockquote">
-            <p className="mb-0">
-              "The workshops and study materials are top-notch. I feel much more confident now."
-            </p>
-            <footer className="blockquote-footer mt-2">- Rahul Mehta</footer>
-          </blockquote>
-        </div>
-        <div className="col-md-4 mb-4">
-          <blockquote className="blockquote">
-            <p className="mb-0">
-              "Thanks to Physics Station, I scored excellent marks in my exams. Highly recommended!"
-            </p>
-            <footer className="blockquote-footer mt-2">- Priya Singh</footer>
-          </blockquote>
-        </div>
-        <div className="col-md-4 mb-4">
-          <blockquote className="blockquote">
-            <p className="mb-0">
-              "The personalized tutoring sessions helped me grasp difficult concepts with ease."
-            </p>
-            <footer className="blockquote-footer mt-2">- Karan Verma</footer>
-          </blockquote>
-        </div>
-        <div className="col-md-4 mb-4">
-          <blockquote className="blockquote">
-            <p className="mb-0">
-              "The NEET preparation course was incredibly helpful. I couldn't have done it without their support."
-            </p>
-            <footer className="blockquote-footer mt-2">- Sneha Gupta</footer>
-          </blockquote>
-        </div>
-        <div className="col-md-4 mb-4">
-          <blockquote className="blockquote">
-            <p className="mb-0">
-              "Physics Station's resources and guidance made learning enjoyable and effective."
-            </p>
-            <footer className="blockquote-footer mt-2">- Arjun Patel</footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-
-    <div className="container mt-5 text-center">
-      <h2 className="serviceheading">Submit Your Review</h2>
-      <p className="servicepara">
-        Share your experience with Physics Station. Your feedback is valuable to us!
-      </p>
-      <form>
-        <div className="mb-3 col-md-6 ">
-          <label htmlFor="studentName" className="form-label">
-            Your Name
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="studentName"
-            placeholder="Enter your name"
-          />
-        </div>
-        <div className="mb-3 col-md-6">
-          <label htmlFor="studentReview" className="form-label">
-            Your Review
-          </label>
-          <textarea
-            className="form-control"
-            id="studentReview"
-            rows="3"
-            placeholder="Write your review here"
-          ></textarea>
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Submit Review
-        </button>
-      </form>
-    </div>
-
       </div>
     </div>
   );

@@ -1,47 +1,86 @@
-import React from 'react'
+import React from 'react';
+import '../components/Services.css'; 
+import service1 from '../assets/service1.jpg';
+import service2 from '../assets/service2.jpg';
+import service3 from '../assets/service3.jpg';
+import service4 from '../assets/service4.jpg';
+import service5 from '../assets/service5.jpg';
+import service6 from '../assets/service6.jpg';
 
 const Services = () => {
   return (
-    <div className='container-fluid text-center'>
-        <div className='row'>
-            <div className='col-md-12'>
-    <h1>Our Services</h1>
-    <p>We offer a wide range of physics-related services to help you excel in your studies and research.</p>
-    </div>
-    <div className='container mt-2 p-5'>
-        <div className='row'>
-        <div className='col-md-6 text-start'>
-            <h2>Tutoring</h2>
-            <p>Our tutoring services provide personalized and effective learning solutions for students of all levels. Whether you need help with physics, mathematics, or other subjects, our expert tutors offer clear explanations and interactive lessons to enhance understanding. We focus on building strong foundational concepts, boosting confidence, and improving academic performance. Flexible scheduling options and customized lesson plans ensure that each student gets the attention they need. With our guidance, students develop problem-solving skills and achieve their academic goals efficiently.</p>
-        </div>
-        <div className='col-md-6 text-start'>
-            <h2>Online Registration</h2>
-            <p>Our online registration services provide a seamless and hassle-free way to enroll for courses, events, or memberships from the comfort of your home. With a user-friendly interface, secure payment options, and instant confirmation, the process is quick and efficient. Whether you're signing up for educational programs, workshops, or training sessions, our system ensures a smooth experience with automated reminders and easy access to your details. Say goodbye to long queues and paperwork—register online anytime, anywhere. Get started today and enjoy a simplified, time-saving registration process!</p>
-        </div>
-        <div className='col-md-6 text-start'>
-            <h2>Workshops</h2>
-            <p>Our physics practical services provide hands-on learning experiences with well-equipped laboratories and expert guidance. We offer a wide range of experiments covering mechanics, optics, electricity, and modern physics, ensuring students grasp theoretical concepts through real-world applications. Our structured approach includes step-by-step instructions, accurate measurements, and data analysis to enhance scientific understanding. We prioritize safety, precision, and interactive learning to make physics experiments engaging and educational. Whether for school, college, or competitive exam preparation, our practical sessions help students develop problem-solving skills and a deeper appreciation for physics.</p>
-        </div>
-        <div className='col-md-6 text-start'>
-            <h2>Study Materials</h2>
-            <p>Our Study Materials service provides high-quality, well-structured resources to help students grasp complex concepts with ease. We offer detailed notes, practice questions, solved examples, and reference guides designed by experts. Our materials cover a wide range of topics and are regularly updated to align with the latest syllabus and exam patterns. Whether you're preparing for board exams, competitive tests, or just enhancing your knowledge, our study materials offer clarity and depth. With easy accessibility in both digital and printed formats, learning has never been more convenient!</p>
-        </div>
-        <div className='col-md-6 text-start'>
-            <h2>Exam Preparation</h2>
-            <p>Our exam preparation services are designed to help students achieve academic success with structured study plans, expert guidance, and comprehensive practice materials. We offer personalized coaching for competitive exams, school assessments, and board exams, ensuring a deep understanding of key concepts. Our interactive learning sessions, mock tests, and time management strategies enhance confidence and performance. With experienced faculty and up-to-date resources, we cater to individual learning needs, making exam preparation effective and stress-free. Join us to boost your scores and reach your academic goals with ease!</p>
-        </div>
-        <div className='col-md-6 text-start'>
-            <h2>Online Attendance</h2>
-            <p>Online attendance services streamline the process of tracking employee, student, or participant attendance with digital precision. These systems use biometric verification, RFID, QR codes, or GPS-based tracking to ensure accurate and real-time records. They eliminate manual errors, reduce paperwork, and enhance productivity by automating attendance management. With cloud-based integration, data can be accessed anytime, providing transparency and efficiency. Many platforms also offer analytics and reporting features, helping organizations make informed decisions. Additionally, they support remote work and hybrid models, making attendance tracking seamless across locations.</p>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
+    <div className="container-fluid">
+      <div className="row justify-content-center mb-5">
+  <div className="col-md-12 text-center mb-4 services-section">
+  <h1 className="section-title">
+  Our <span className="highlight">Services</span>
+</h1>
 
+    <p className="section-subtitle">
+      We offer a wide range of physics-related services to help you excel in your studies and research.
+    </p>
+  </div>
 
+  <div className="row align-items-center mb-5">
+    <div className="col-md-6 order-md-1">
+      <img src={service1} className="img-fluid rounded fixed-img" alt="Service 1" />
+    </div>
+    <div className="col-md-6 order-md-2">
+      <h3 className='serice-name'>Tutoring</h3>
+      <p className='service-para'>At our tutoring center, we are dedicated to helping students reach their full academic potential through personalized and results-driven guidance. Whether it's school subjects, competitive exam preparation, or concept clarification, our experienced tutors provide one-on-one and group sessions tailored to each student's unique learning style. With a strong focus on building confidence and improving performance, we ensure that every student receives the support they need to excel in their studies and achieve their goals.</p>
+    </div>
+  </div>
 
-  )
-}
+  <div className="row align-items-center mb-5">
+    <div className="col-md-6 order-md-2">
+      <img src={service2} className="img-fluid rounded fixed-img" alt="Service 2" />
+    </div>
+    <div className="col-md-6 order-md-1">
+      <h3 className='serice-name'>Online Registration</h3>
+      <p className='service-para'>Getting started with our tutoring programs is quick and easy with our hassle-free online registration process. Simply fill out the registration form, choose your preferred subjects or courses, and select your convenient schedule—all from the comfort of your home. Once registered, our team will get in touch to guide you through the next steps. Join us today and take the first step towards academic excellence!</p>
+    </div>
+  </div>
 
-export default Services
+  <div className="row align-items-center mb-5">
+    <div className="col-md-6 order-md-1">
+      <img src={service3} className="img-fluid rounded fixed-img" alt="Service 3" />
+    </div>
+    <div className="col-md-6 order-md-2">
+      <h3 className='serice-name'>Workshops</h3>
+      <p className='service-para'>Our workshops are designed to go beyond traditional classroom teaching, offering students a chance to explore subjects through hands-on activities, real-life applications, and expert guidance. These focused sessions help sharpen problem-solving skills, boost confidence, and ignite curiosity in learners of all levels. Whether it's exam strategies, science experiments, or skill-based learning, our workshops provide an engaging environment where knowledge comes alive.</p>
+    </div>
+  </div>
+  <div className="row align-items-center mb-5">
+    <div className="col-md-6 order-md-2">
+      <img src={service4} className="img-fluid rounded fixed-img" alt="Service 4" />
+    </div>
+    <div className="col-md-6 order-md-1">
+      <h3 className='serice-name'>Study Materials</h3>
+      <p className='service-para'>We provide well-structured and easy-to-understand study materials that align with the latest curriculum and exam patterns. Each resource is thoughtfully prepared by subject experts to help students grasp key concepts, practice effectively, and revise with confidence. From detailed notes and formula sheets to practice papers and revision guides, our materials are designed to support every step of the learning journey—both in class and at home.</p>
+    </div>
+  </div>
+  <div className="row align-items-center mb-5">
+    <div className="col-md-6 order-md-1">
+      <img src={service5} className="img-fluid rounded fixed-img" alt="Service 5" />
+    </div>
+    <div className="col-md-6 order-md-2">
+      <h3 className='serice-name'>Exam Preparation</h3>
+      <p className='service-para'>Our exam preparation programs are specially designed to help students perform their best in school exams, board exams, and competitive tests. We provide a strategic mix of concept revision, practice tests, time-management techniques, and personalized doubt-solving sessions. With expert guidance and regular performance tracking, we ensure students gain the confidence and clarity they need to tackle exams with ease and achieve outstanding results.</p>
+    </div>
+  </div>
+  <div className="row align-items-center mb-5">
+    <div className="col-md-6 order-md-2">
+      <img src={service6} className="img-fluid rounded fixed-img" alt="Service 6" />
+    </div>
+    <div className="col-md-6 order-md-1">
+      <h3 className='serice-name'>Online Attendance</h3>
+      <p className='service-para'>Our smart online attendance system ensures complete transparency and accountability for both students and parents. With real-time tracking and instant updates, you can easily monitor attendance records through your dashboard. This system helps maintain consistency, encourages regular participation, and allows parents to stay informed about their child's classroom presence—anytime, anywhere.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+  );
+};
+
+export default Services;
